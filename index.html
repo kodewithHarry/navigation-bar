@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>navigation bar</title>
+</head>
+
+<body>
+  <div id="side-navigation">
+    <h2 id="close">&#10005</h2>
+    <h2 id="menu-text">Navigation</h2>
+    <hr />
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </div>
+    
+      <h2 id="open-nav">&#9776;</h2>
+  
+  <script>
+  
+     
+    var nav = document.getElementById("open-nav");
+   
+   nav.addEventListener("click", function(){
+     document.getElementById("side-navigation").style.display="block";
+   })
+   var close = document.getElementById("close");
+   close.addEventListener("click", function (){
+     document.getElementById("side-navigation").style.display= "none";
+   })
+  </script>
+  
+</body>
+
+</html>
